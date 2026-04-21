@@ -16,7 +16,14 @@ export default function RevealInit() {
     );
 
     const elements = document.querySelectorAll<HTMLElement>(".reveal:not(.visible)");
-    elements.forEach((el) => observer.observe(el));
+    elements.forEach((el) => {
+      const rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight && rect.bottom > 0) {
+        el.classList.add("visible");
+      } else {
+        observer.observe(el);
+      }
+    });
 
     return () => observer.disconnect();
   }, []);
