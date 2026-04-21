@@ -4,6 +4,9 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ScrollProgress from "@/components/ScrollProgress";
+import GAPageView from "@/components/GAPageView";
+
+const GA_ID = "G-3ZCETH7GPS";
 
 export const metadata: Metadata = {
   title: "有限会社LINABLEキャリア",
@@ -30,8 +33,9 @@ export default function RootLayout({
         <Header />
         <main>{children}</main>
         <Footer />
+        <GAPageView gaId={GA_ID} />
       </body>
-      <GoogleAnalytics gaId="G-3ZCETH7GPS" />
+      <GoogleAnalytics gaId={GA_ID} />
     </html>
   );
 }
