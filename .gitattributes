@@ -1,0 +1,6 @@
+# デフォルトはCRLF（Windows）
+* text=auto
+
+# シェルスクリプトはLF固定（Linux実行環境のため）
+*.sh text eol=lf
+.githooks/* text eol=lf
