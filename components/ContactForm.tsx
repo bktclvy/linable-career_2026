@@ -151,7 +151,7 @@ export default function ContactForm() {
           <input type="checkbox" name="consent" required />
           <span className="checkbox-mark" />
           <span className="checkbox-label">
-            <Link href="/privacy" style={{ color: "var(--sage)", textDecoration: "underline" }}>プライバシーポリシー</Link>に同意します <span className="required">＊</span>
+            <Link href="/privacy" target="_blank" rel="noopener noreferrer" style={{ color: "var(--sage)", textDecoration: "underline" }}>プライバシーポリシー</Link>に同意します <span className="required">＊</span>
           </span>
         </label>
       </div>
