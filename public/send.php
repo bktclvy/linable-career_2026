@@ -96,9 +96,10 @@ $body = implode("\n", [
 mb_language('uni');
 mb_internal_encoding('UTF-8');
 
-$subject = '【LINABLEキャリア】お問い合わせ：' . $category_labels[$category];
+$subject = mb_encode_mimeheader('【LINABLEキャリア】お問い合わせ：' . $category_labels[$category], 'UTF-8', 'B');
+$from_name = mb_encode_mimeheader('LINABLEキャリア WEB', 'UTF-8', 'B');
 $headers = implode("\r\n", [
-    'From: LINABLEキャリア WEB <' . FROM_EMAIL . '>',
+    'From: ' . $from_name . ' <' . FROM_EMAIL . '>',
     'Reply-To: ' . $email_raw,
     'Content-Type: text/plain; charset=UTF-8',
 ]);
