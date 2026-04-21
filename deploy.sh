@@ -19,7 +19,7 @@ SSH_KEY="$HOME/.ssh/devlinable.key"
 REMOTE_USER="devlinable"
 REMOTE_HOST="sv13109.xserver.jp"
 REMOTE_PORT="10022"
-REMOTE_PATH="/home/devlinable/linable-career.co.jp/public_html/"
+REMOTE_PATH="/home/devlinable/linable-career.co.jp/public_html/_site/"
 
 if [ ! -f "$SSH_KEY" ]; then
     echo "Error: SSH key not found at $SSH_KEY"
