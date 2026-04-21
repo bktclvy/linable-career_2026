@@ -3,7 +3,7 @@ declare(strict_types=1);
 header('Content-Type: application/json; charset=utf-8');
 
 // ── 設定（要変更）──────────────────────────────────────
-const TO_EMAIL   = 'info@linable-career.co.jp';      // 受信先メールアドレス
+const TO_EMAIL   = 'info@linable-career.co.jp, shimazaki@linable-career.co.jp'; // 受信先メールアドレス
 const FROM_EMAIL = 'noreply@linable-career.co.jp';   // 送信元（サイトのドメインと一致させること）
 // ────────────────────────────────────────────────────
 
