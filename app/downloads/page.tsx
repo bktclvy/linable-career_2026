@@ -29,7 +29,7 @@ export default function DownloadsPage() {
                 <span>PDF</span>
                 <span>6.8MB</span>
               </div>
-              <a href="/linable-kit1-mfg.pdf" download className="btn-primary dl-card-btn"><span>ダウンロード</span><span className="arrow-icon">↓</span></a>
+              <a href="/linable-kit1-mfg.pdf" target="_blank" rel="noopener noreferrer" className="btn-primary dl-card-btn"><span>資料を見る</span><span className="arrow-icon">→</span></a>
             </div>
 
             <div className="dl-card">
@@ -41,7 +41,7 @@ export default function DownloadsPage() {
                 <span>PDF</span>
                 <span>2.5MB</span>
               </div>
-              <a href="/linable-kit1-welfare.pdf" download className="btn-primary dl-card-btn" style={{ background: "var(--terracotta)" }}><span>ダウンロード</span><span className="arrow-icon">↓</span></a>
+              <a href="/linable-kit1-welfare.pdf" target="_blank" rel="noopener noreferrer" className="btn-primary dl-card-btn" style={{ background: "var(--terracotta)" }}><span>資料を見る</span><span className="arrow-icon">→</span></a>
             </div>
 
             <div className="dl-card dl-card-soon">
